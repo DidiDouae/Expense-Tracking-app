@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ExpensesComponent } from "./components/expenses/expenses.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ExpensesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

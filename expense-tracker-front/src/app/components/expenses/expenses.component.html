@@ -1,0 +1,42 @@
+<div class="expense-container">
+  <h2>Expenses</h2>
+
+  <!-- Add Expense Form -->
+  <form (ngSubmit)="addExpense()">
+    <label for="name">Name</label>
+    <input id="name" type="text" [(ngModel)]="newExpense.name" name="name" required>
+  
+    <label for="amount">Amount</label>
+    <input id="amount" type="number" [(ngModel)]="newExpense.amount" name="amount" required>
+  
+    <label for="category">Category</label>
+    <select [(ngModel)]="newExpense.category" name="category" required>
+      <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+    </select>
+  
+    <button type="submit">Add Expense</button>
+  </form>
+  
+
+  <!-- Expense Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Amount</th>
+        <th>Category</th>
+        <th>Date</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let expense of expenses">
+        <td>{{ expense.name }}</td>
+        <td>{{ expense.amount }}</td>
+        <td>{{ expense.category }}</td>
+        <td>{{ expense.date }}</td>
+        <td><button (click)="deleteExpense(expense.id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
