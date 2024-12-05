@@ -167,3 +167,4 @@ C:\Users\HP\apptracker\ExpenseTrackerAPI\obj\Debug\net8.0\refint\ExpenseTrackerA
 C:\Users\HP\apptracker\ExpenseTrackerAPI\obj\Debug\net8.0\ExpenseTrackerAPI.pdb
 C:\Users\HP\apptracker\ExpenseTrackerAPI\obj\Debug\net8.0\ExpenseTrackerAPI.genruntimeconfig.cache
 C:\Users\HP\apptracker\ExpenseTrackerAPI\obj\Debug\net8.0\ref\ExpenseTrackerAPI.dll
+C:\Users\HP\apptracker\ExpenseTrackerAPI\obj\Debug\net8.0\ExpenseTrackerAPI.sourcelink.json
