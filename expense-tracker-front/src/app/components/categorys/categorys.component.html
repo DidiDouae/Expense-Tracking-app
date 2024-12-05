@@ -1,0 +1,31 @@
+<div class="Category-container">
+    <h2>Categorys</h2>
+  
+    <!-- Add Category Form -->
+    <form (ngSubmit)="addCategory()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" type="text" [(ngModel)]="newCategory.name" name="name" required>
+      </div>
+      
+      <button type="submit">Add Category</button>
+    </form>
+    
+  
+    <!-- Category Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let Category of categorys">
+          <td>{{ Category.name }}</td>
+          <td><button class="delete-btn" (click)="deleteCategory(Category.id)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

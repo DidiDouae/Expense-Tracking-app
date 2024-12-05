@@ -77,13 +77,16 @@
   <main>
     <header>
       <h1>Expense Tracker</h1>
-      <p>Suivez et gérez vos dépenses efficacement et en toute simplicité.</p>
+      <p><b>Track and manage your expenses efficiently and effortlessly</b></p>
     </header>
-    
-    <section class="expenses-container">
-    
-      <app-expenses></app-expenses>
-      ok
-    </section>
+
+  
+    <nav>
+      <button type="button" routerLink="expenses">Expenses</button>
+
+      <button routerLink="categorys">Categories</button>
+    </nav>
+    <router-outlet></router-outlet>
+
   </main>
 </body>

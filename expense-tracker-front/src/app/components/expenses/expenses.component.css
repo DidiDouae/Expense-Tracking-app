@@ -1,24 +1,111 @@
+/* Container styling */
 .expense-container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
+ /* max-width: 1500px; /* Limite la largeur pour des écrans larges */
+  padding: 40px;
+  background-color: #f9f9f9; /* Couleur d'arrière-plan douce */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+/* Form styling */
+form {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column; /* Place chaque champ sur une ligne */
+  gap: 20px; /* Espace entre les champs */
+}
+
+/* Form group for better structure */
+.form-group {
+  display: flex;
+  flex-direction: column; /* Aligne le label au-dessus de l'input */
+}
+
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Espace entre le formulaire et la table */
+  background-color: #ffffff; /* Fond blanc pour contraste */
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4; /* Fond léger pour l'en-tête */
+  font-weight: bold;
+  text-transform: uppercase; /* Style pour l'en-tête */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternance de couleurs pour lisibilité */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Highlight des lignes au survol */
+}
+
+/* Button styling */
+/* Style général des boutons */
+button {
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+/* Bouton "Add Expense" */
+button[type="submit"] {
+  background-color: #007BFF; /* Bleu pour Add Expense */
+  color: #ffffff;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Plus foncé au survol */
+}
+
+button[type="submit"]:active {
+  background-color: #003f7f; /* Couleur active */
+}
+
+/* Bouton "Delete" */
+.delete-btn {
+  background-color: #DC3545; /* Rouge pour Delete */
+  color: #ffffff;
+}
+
+.delete-btn:hover {
+  background-color: #a71d2a; /* Rouge plus foncé au survol */
+  transform: scale(1.05); /* Effet de zoom */
+}
+
+.delete-btn:active {
+  background-color: #7d1420; /* Rouge encore plus foncé au clic */
+  transform: scale(0.95); /* Réduction légère */
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .expense-container {
+    width: 95%;
   }
-  
-  form {
-    margin-bottom: 20px;
-  }
-  
+
   table {
-    width: 100%;
-    border-collapse: collapse;
+    font-size: 14px; /* Texte réduit sur petits écrans */
   }
-  
-  th, td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
-  }
-  
+
   button {
-    cursor: pointer;
+    font-size: 14px; /* Taille des boutons adaptée */
   }
-  
+}
